@@ -5,6 +5,7 @@ const BRANDS = [
   { name: "Moura", image: "/produtos/Moura.png" },
   { name: "Heliar", image: "/produtos/Heliar.png" },
   { name: "Zetta", image: "/produtos/Zetta.png" },
+  { name: "Outras Baterias", image: null },
 ];
 
 export default function BatteryCarousel() {
@@ -20,20 +21,26 @@ export default function BatteryCarousel() {
         </p>
       </div>
 
-      <div className="mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:mx-auto lg:mt-12 lg:grid lg:max-w-6xl lg:grid-cols-3 lg:gap-8 lg:overflow-visible lg:px-12 lg:pb-0">
+      <div className="mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:mx-auto lg:mt-12 lg:grid lg:max-w-6xl lg:grid-cols-4 lg:gap-8 lg:overflow-visible lg:px-12 lg:pb-0">
         {BRANDS.map((brand) => (
           <div
             key={brand.name}
             className="flex w-[72%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm lg:w-full"
           >
-            <div className="relative aspect-4/3 w-full bg-zinc-50">
-              <Image
-                src={brand.image}
-                alt={`Bateria ${brand.name}`}
-                fill
-                sizes="(min-width: 1024px) 33vw, 72vw"
-                className="object-contain p-6"
-              />
+            <div className="relative flex aspect-4/3 w-full items-center justify-center bg-zinc-50">
+              {brand.image ? (
+                <Image
+                  src={brand.image}
+                  alt={`Bateria ${brand.name}`}
+                  fill
+                  sizes="(min-width: 1024px) 25vw, 72vw"
+                  className="object-contain p-6"
+                />
+              ) : (
+                <svg className="h-16 w-16 text-zinc-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
+                </svg>
+              )}
             </div>
 
             <div className="flex flex-1 flex-col gap-1 p-4">

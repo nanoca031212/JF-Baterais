@@ -1,3 +1,4 @@
+import Image from "next/image";
 import AnimatedHighlightCard from "./AnimatedHighlightCard";
 
 const HIGHLIGHTS = [
@@ -53,9 +54,20 @@ const HIGHLIGHTS = [
 
 export default function About() {
   return (
-    <section id="sobre" className="overflow-x-hidden bg-white px-5 py-24 lg:px-12 lg:py-32">
+    <section
+      id="sobre"
+      className="overflow-x-hidden bg-white px-5 py-24 lg:px-12 lg:py-32"
+    >
       <div className="lg:mx-auto lg:grid lg:max-w-6xl lg:grid-cols-2 lg:items-center lg:gap-16">
-        <div className="aspect-4/3 w-full rounded-4xl bg-zinc-200 lg:order-2" />
+        <div className="relative w-full overflow-hidden rounded-4xl bg-zinc-100 lg:order-2 shadow-lg">
+          <Image
+            src="/sobre.png"
+            alt="Sobre a Rufino Baterias"
+            width={800}
+            height={1000}
+            className="h-auto w-full object-contain"
+          />
+        </div>
 
         <div className="lg:order-1">
           <h2 className="mt-8 text-3xl font-extrabold tracking-tight text-black lg:mt-0 lg:text-5xl">
@@ -64,15 +76,15 @@ export default function About() {
 
           <p className="mt-3 text-base leading-relaxed text-zinc-600 lg:mt-6 lg:text-lg">
             Somos especialistas em baterias automotivas em Vespasiano:
-            atendimento rápido, instalação profissional e as principais
-            marcas do mercado para você voltar pra estrada sem dor de cabeça.
+            atendimento rápido, instalação profissional e as principais marcas
+            do mercado para você voltar pra estrada sem dor de cabeça.
           </p>
 
           <p className="mt-4 text-base leading-relaxed text-zinc-600 lg:text-lg">
             Trabalhamos com carros, motos e caminhões, oferecendo entrega e
-            instalação no mesmo dia, sem enrolação. Nossa equipe é treinada
-            para orientar você na escolha certa, com transparência no preço
-            e garantia de fábrica em todas as baterias vendidas.
+            instalação no mesmo dia, sem enrolação. Nossa equipe é treinada para
+            orientar você na escolha certa, com transparência no preço e
+            garantia de fábrica em todas as baterias vendidas.
           </p>
         </div>
       </div>

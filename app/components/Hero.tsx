@@ -31,14 +31,31 @@ export default function Hero() {
           Moura, Heliar e Zetta com instalação rápida e garantia.
         </p>
 
+        <div className="flex items-center gap-2 text-sm font-semibold text-yellow-400 drop-shadow-md lg:text-base">
+          <svg
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
+            />
+          </svg>
+          <span>Dividimos em até 10x no cartão</span>
+        </div>
+
         <div className="flex flex-col gap-2.5 pt-1 lg:flex-row lg:gap-4 lg:pt-2">
           <a
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex h-13 items-center justify-center gap-2 rounded-full bg-[#25D366] text-base font-bold text-black shadow-lg shadow-black/30 active:scale-[0.98] lg:w-auto lg:px-8"
+            className="flex h-13 items-center justify-center gap-2 rounded-full bg-[#25D366] text-base font-bold text-white shadow-lg shadow-black/30 active:scale-[0.98] lg:w-auto lg:px-8"
           >
-            <svg viewBox="0 0 24 24" className="h-5 w-5 fill-black">
+            <svg viewBox="0 0 24 24" className="h-5 w-5 fill-white">
               <path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z" />
               <path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.5 5.2L2 22l4.9-1.3c1.5.8 3.2 1.3 5.1 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.3c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.3.9.9-3.2-.2-.3C3.6 14.7 3.1 13.4 3.1 12c0-4.9 4-8.9 8.9-8.9s8.9 4 8.9 8.9-4 8.9-8.9 8.9z" />
             </svg>
