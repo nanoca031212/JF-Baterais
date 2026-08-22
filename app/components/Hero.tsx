@@ -18,9 +18,14 @@ export default function Hero() {
       <div className="absolute inset-0 hidden bg-linear-to-r from-black/45 via-black/0 to-transparent lg:block" />
 
       <div className="relative z-10 flex flex-col gap-3 px-5 pt-8 lg:h-full lg:max-w-2xl lg:justify-center lg:gap-6 lg:px-16 lg:pt-0">
-        <span className="w-fit rounded-full bg-yellow-400 px-3 py-1 text-xs font-bold uppercase tracking-wide text-black lg:px-4 lg:py-1.5 lg:text-sm">
-          Entrega hoje na sua casa
-        </span>
+        <div className="flex flex-wrap gap-2">
+          <span className="w-fit rounded-full bg-yellow-400 px-3 py-1 text-xs font-bold uppercase tracking-wide text-black lg:px-4 lg:py-1.5 lg:text-sm">
+            Entrega hoje na sua casa
+          </span>
+          <span className="w-fit rounded-full bg-yellow-400 px-3 py-1 text-xs font-bold uppercase tracking-wide text-black lg:px-4 lg:py-1.5 lg:text-sm">
+            Atendimento 24 horas
+          </span>
+        </div>
 
         <h1 className="text-4xl font-extrabold leading-[1.05] tracking-tight text-white drop-shadow-lg lg:text-6xl">
           Sua bateria nova{" "}
