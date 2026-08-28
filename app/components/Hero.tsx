@@ -23,7 +23,7 @@ export default function Hero() {
             Entrega rápida em Vespasiano e região
           </span>
           <span className="w-fit rounded-full bg-[#0530A1] px-3 py-1 text-xs font-bold uppercase tracking-wide text-white border border-blue-400/30 shadow-md lg:px-4 lg:py-1.5 lg:text-sm">
-            Instalação grátis no local
+            Atendimento 24 horas
           </span>
         </div>
 
