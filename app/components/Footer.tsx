@@ -18,8 +18,8 @@ export default function Footer() {
         <div>
           <div className="w-fit rounded-lg bg-white px-2 py-1">
             <Image
-              src="/Logo.webp"
-              alt="Rufino Baterias"
+              src="/Logo1.png"
+              alt="JF Baterias"
               width={1024}
               height={347}
               className="h-10 w-auto lg:h-12"
@@ -27,8 +27,7 @@ export default function Footer() {
           </div>
 
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-zinc-400">
-            Bateria nova sem enrolação em Vespasiano: entrega e instalação no
-            mesmo dia, com as marcas em que você confia.
+            Baterias automotivas de confiança em Vespasiano: entrega rápida, instalação no local e teste elétrico com garantia oficial.
           </p>
 
           <a
@@ -61,7 +60,7 @@ export default function Footer() {
           <p>Vespasiano, MG</p>
           <p className="mt-1">Seg a sáb · 8h às 18h</p>
           <p className="mt-4">
-            © {year} Rufino Baterias. Todos os direitos reservados.
+            © {year} JF Baterias. Todos os direitos reservados.
           </p>
         </div>
       </div>

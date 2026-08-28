@@ -4,29 +4,29 @@ import { useState } from "react";
 
 const FAQS = [
   {
-    question: "Como saber se a bateria do carro está ruim?",
+    question: "Vocês cobram taxa de entrega e instalação em Vespasiano?",
     answer:
-      "Sinais comuns são partida lenta, luzes do painel piscando, faróis fracos ou a bateria com mais de 2 anos de uso. Se notar isso, testamos gratuitamente na hora.",
+      "A entrega e instalação são gratuitas para a maior parte de Vespasiano. Você paga somente o valor anunciado da bateria.",
   },
   {
-    question: "Vocês fazem entrega e instalação de bateria em Vespasiano?",
+    question: "Quanto tempo a JF Baterias demora para chegar?",
     answer:
-      "Sim, entregamos e instalamos no mesmo dia em Vespasiano e região, com técnico especializado, sem custo extra na maioria dos casos.",
+      "Em média chegamos entre 30 a 50 minutos após o chamado no WhatsApp, dependendo da sua localização em Vespasiano e região.",
   },
   {
-    question: "Qual a melhor bateria para o meu carro?",
+    question: "E se o defeito não for a bateria?",
     answer:
-      "Depende do modelo e ano do veículo. Trabalhamos com Moura, Heliar e Zetta e te ajudamos a escolher a ideal pelo WhatsApp.",
+      "Nosso técnico realiza o teste de carga e do alternador na hora com equipamento digital. Se a bateria ainda estiver boa ou o problema for outro, nós te avisamos com total transparência.",
   },
   {
-    question: "Quanto tempo dura a instalação?",
+    question: "Como funciona a garantia da bateria?",
     answer:
-      "Em geral leva de 15 a 30 minutos, feita no local que você estiver.",
+      "Todas as nossas baterias são novas, lacradas e acompanham certificado de garantia de fábrica válido de 12 a 24 meses (de acordo com a marca) em todo o Brasil.",
   },
   {
-    question: "Quais formas de pagamento vocês aceitam?",
+    question: "Quais são as formas de pagamento aceitas?",
     answer:
-      "Aceitamos Pix, cartão de débito e crédito parcelado em até 12x.",
+      "O pagamento é realizado somente após a instalação e teste: aceitamos Pix com desconto, cartões de débito e parcelamento em até 12x no cartão de crédito.",
   },
 ];
 
@@ -37,16 +37,15 @@ export default function Faq() {
     <section id="faq" className="bg-white px-5 py-20 lg:px-12 lg:py-28">
       <div className="flex flex-col items-center text-center">
         <span className="w-fit rounded-full border border-yellow-200 bg-yellow-50 px-4 py-1 text-xs font-bold uppercase tracking-wide text-yellow-700">
-          FAQ
+          Tire suas Dúvidas
         </span>
 
         <h2 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight text-black lg:text-5xl">
-          Dúvidas frequentes sobre bateria automotiva
+          Perguntas Frequentes
         </h2>
 
         <p className="mt-3 max-w-sm text-sm leading-relaxed text-zinc-500 lg:max-w-lg lg:text-base">
-          Respostas rápidas para as principais dúvidas de quem procura
-          bateria em Vespasiano com entrega, instalação e atendimento rápido.
+          Tudo o que você precisa saber sobre o socorro, troca e garantia da JF Baterias em Vespasiano.
         </p>
       </div>
 

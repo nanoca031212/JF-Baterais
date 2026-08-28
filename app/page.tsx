@@ -12,10 +12,9 @@ export default function Home() {
     <div className="flex flex-col">
       <Hero />
       <About />
-
+      <VehicleTypes />
       <BatteryCarousel />
       <LogoCarousel />
-      <VehicleTypes />
       <Testimonials />
       <Faq />
       <Footer />

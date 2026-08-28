@@ -13,8 +13,8 @@ export default function Header() {
   return (
     <header className="flex items-center justify-between border-b border-zinc-100 bg-white px-5 py-4 lg:px-12 lg:py-4">
       <Image
-        src="/Logo.webp"
-        alt="Rufino Baterias"
+        src="/Logo1.png"
+        alt="JF Baterias"
         width={1024}
         height={347}
         priority

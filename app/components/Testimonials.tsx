@@ -1,27 +1,27 @@
 const TESTIMONIALS = [
   {
-    name: "Marcos Silva",
-    vehicle: "Fiat Argo",
+    name: "Rodrigo Martins",
+    vehicle: "Honda Civic · Bairro Célvia",
     quote:
-      "Bateria descarregou de manhã e em menos de uma hora já estava tudo resolvido, com instalação incluída.",
+      "O carro não pegou de manhã na garagem. Chamei a JF Baterias pelo WhatsApp e em menos de 40 minutos o técnico já estava aqui, trocou e ainda mediu o alternador.",
   },
   {
-    name: "Juliana Costa",
-    vehicle: "Chevrolet Onix",
+    name: "Camila Fonseca",
+    vehicle: "VW Gol · Centro de Vespasiano",
     quote:
-      "Atendimento rápido pelo WhatsApp, preço justo e a bateria Moura até hoje sem problema nenhum.",
+      "Atendimento muito transparente. O valor combinado no WhatsApp foi o mesmo cobrado na máquina de cartão na entrega, sem taxa escondida de instalação.",
   },
   {
-    name: "Roberto Alves",
-    vehicle: "Hyundai HB20",
+    name: "Thiago Oliveira",
+    vehicle: "Fiat Toro · Jardim da Glória",
     quote:
-      "Vieram até minha casa trocar a bateria no mesmo dia. Recomendo pra quem não quer perder tempo.",
+      "Precisei com urgência e o socorro foi imediato. Coloquei uma Heliar lacrada, certificado preenchido na hora e nota fiscal. Recomendo demais!",
   },
 ];
 
 function Stars() {
   return (
-    <div className="flex gap-0.5">
+    <div className="flex gap-1">
       {Array.from({ length: 5 }).map((_, i) => (
         <svg key={i} viewBox="0 0 20 20" className="h-4 w-4 fill-yellow-400">
           <path d="M10 1.5l2.6 5.27 5.82.85-4.21 4.1.99 5.79L10 14.9l-5.2 2.61.99-5.79-4.21-4.1 5.82-.85L10 1.5z" />
@@ -33,32 +33,38 @@ function Stars() {
 
 export default function Testimonials() {
   return (
-    <section id="depoimentos" className="bg-black/10 py-32 lg:py-36">
+    <section id="depoimentos" className="bg-[#0530A1] py-20 lg:py-28 text-white">
       <div className="px-5 lg:mx-auto lg:max-w-6xl lg:px-12">
-        <h2 className="text-3xl font-extrabold tracking-tight text-white lg:text-5xl">
-          O que dizem nossos clientes
+        <span className="rounded-full bg-yellow-400 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-black">
+          Opinião de Clientes
+        </span>
+        <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-white lg:text-5xl">
+          Quem precisou da JF Baterias aprova
         </h2>
-        <p className="mt-1 text-base text-blue-100 lg:text-lg">Quem já pediu, recomenda</p>
+        <p className="mt-2 text-base text-blue-100 lg:text-lg">
+          Atendimento de confiança e rapidez para motoristas em Vespasiano e região.
+        </p>
       </div>
 
-      <div className="mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:mx-auto lg:mt-12 lg:grid lg:max-w-6xl lg:grid-cols-3 lg:gap-8 lg:overflow-visible lg:px-12 lg:pb-0">
+      <div className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:mx-auto lg:mt-12 lg:grid lg:max-w-6xl lg:grid-cols-3 lg:gap-8 lg:overflow-visible lg:px-12 lg:pb-0">
         {TESTIMONIALS.map((testimonial) => (
           <div
             key={testimonial.name}
-            className="flex w-[78%] shrink-0 snap-start flex-col gap-3 rounded-2xl bg-white p-5 lg:w-full lg:p-6"
+            className="flex w-[82%] shrink-0 snap-start flex-col justify-between gap-4 rounded-3xl bg-white p-6 shadow-xl lg:w-full"
           >
-            <Stars />
+            <div className="flex flex-col gap-3">
+              <Stars />
+              <p className="text-sm leading-relaxed text-zinc-700">
+                &ldquo;{testimonial.quote}&rdquo;
+              </p>
+            </div>
 
-            <p className="text-sm leading-relaxed text-zinc-700">
-              &ldquo;{testimonial.quote}&rdquo;
-            </p>
-
-            <div className="mt-1 flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-700 text-sm font-bold text-white">
+            <div className="mt-2 flex items-center gap-3 border-t border-zinc-100 pt-4">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0530A1] text-sm font-bold text-white shadow-sm">
                 {testimonial.name.charAt(0)}
               </div>
               <div>
-                <p className="text-sm font-bold text-black">
+                <p className="text-sm font-bold text-zinc-900">
                   {testimonial.name}
                 </p>
                 <p className="text-xs text-zinc-500">{testimonial.vehicle}</p>

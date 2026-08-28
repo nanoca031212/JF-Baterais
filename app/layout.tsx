@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 const title =
-  "Rufino Baterias | Baterias Automotivas em Vespasiano com Entrega no Mesmo Dia";
+  "JF Baterias | Baterias Automotivas em Vespasiano - Entrega e Instalação Rápida";
 const description =
-  "Loja de baterias automotivas em Vespasiano (MG). Moura, Heliar e Zetta para carro, moto e caminhão. Entrega e instalação no mesmo dia, com garantia de fábrica. Peça pelo WhatsApp.";
+  "Loja de baterias em Vespasiano (MG). Moura, Heliar, Zetta e mais para carros, motos e caminhões. Entrega rápida, instalação no local e garantia de fábrica. Chame no WhatsApp!";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -28,14 +28,16 @@ export const metadata: Metadata = {
   description,
   keywords: [
     "bateria automotiva Vespasiano",
+    "JF Baterias Vespasiano",
     "loja de bateria Vespasiano",
     "troca de bateria Vespasiano",
+    "socorro de bateria Vespasiano",
     "bateria de carro Vespasiano",
     "bateria de moto Vespasiano",
     "bateria de caminhão Vespasiano",
-    "bateria Moura",
-    "bateria Heliar",
-    "bateria Zetta",
+    "bateria Moura Vespasiano",
+    "bateria Heliar Vespasiano",
+    "bateria Zetta Vespasiano",
     "entrega de bateria Vespasiano",
     "instalação de bateria a domicílio",
   ],
@@ -52,10 +54,10 @@ export const metadata: Metadata = {
     description,
     images: [
       {
-        url: "/backmob1.png",
+        url: "/backmob2.png",
         width: 941,
         height: 1672,
-        alt: "Mascote da Rufino Baterias ao lado de baterias Moura, Heliar e Zetta",
+        alt: "JF Baterias em Vespasiano - Baterias Moura, Heliar e Zetta",
       },
     ],
   },
@@ -63,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/backmob1.png"],
+    images: ["/backmob2.png"],
   },
   robots: {
     index: true,
