@@ -60,12 +60,12 @@ export default function About() {
       className="overflow-x-hidden bg-white px-5 py-24 lg:px-12 lg:py-32"
     >
       <div className="lg:mx-auto lg:grid lg:max-w-6xl lg:grid-cols-2 lg:items-center lg:gap-16">
-        <div className="relative w-full overflow-hidden rounded-4xl bg-zinc-100 lg:order-2 shadow-lg">
+        <div className="relative flex items-center justify-center overflow-hidden rounded-4xl bg-zinc-50 border border-zinc-100 p-8 shadow-lg lg:order-2 lg:p-12">
           <Image
-            src="/jf.png"
-            alt="Conheça a JF Baterias em Vespasiano"
+            src="/Logo1.png"
+            alt="JF Baterias"
             width={800}
-            height={1000}
+            height={500}
             className="h-auto w-full object-contain"
           />
         </div>
