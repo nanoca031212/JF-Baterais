@@ -131,6 +131,19 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
           gtag('config', 'AW-18423645002');`}
         </Script>
+        {/* Google Ads conversion: WhatsApp click. Global helper, defined once. */}
+        <Script id="google-ads-conversion-whatsapp" strategy="afterInteractive">
+          {`if (typeof window.gtag_report_conversion !== 'function') {
+            window.gtag_report_conversion = function(url) {
+              gtag('event', 'conversion', {
+                'send_to': 'AW-18423645002/908ECNKmnuwcEMqGitFE',
+                'value': 1.0,
+                'currency': 'BRL'
+              });
+              return true;
+            };
+          }`}
+        </Script>
         <Header />
         {children}
       </body>
